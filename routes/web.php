@@ -17,3 +17,5 @@ Route::get('/', function () {
 Route::get('/data','ApiController@listCloth');
 
 Route::get('/v1/list','ApiController@getAllCloth');
+
+Route::post('/v1/item','ApiController@insertItem');
