@@ -13,4 +13,7 @@ class Inventory extends Model
     public function cloth(){
         return $this->belongsTo(Cloth::class,'inventory_id');
     }
+    public function registry(){
+        return $this->belongsTo(Registry::class,'cloth_inventory_id');
+    }
 }

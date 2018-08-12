@@ -13,4 +13,7 @@ class Cloth extends Model
     public function inventory(){
         return $this->hasOne('App\Models\Inventory','id');
     }
+    public function registry(){
+        return $this->belongsTo(Registry::class,'cloth_id');
+    }
 }

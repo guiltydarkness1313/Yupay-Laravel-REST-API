@@ -18,4 +18,6 @@ Route::get('/data','ApiController@listCloth');
 
 Route::get('/v1/list','ApiController@getAllCloth');
 
+Route::get('/v1/listRegistry','ApiController@getAllRegistry');
+
 Route::post('/v1/item','ApiController@insertItem');
